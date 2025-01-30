@@ -1,0 +1,43 @@
+.window {
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    flex-basis: auto;
+    margin-top: 0;
+    max-width: 50%;
+}
+
+.title {
+    -unity-font-style: bold;
+    font-size: 32px;
+}
+
+.list {
+}
+
+.list_item {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    flex-grow: 0;
+    flex-basis: auto;
+    max-height: 22%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.item_text {
+}
+
+.item_button {
+}

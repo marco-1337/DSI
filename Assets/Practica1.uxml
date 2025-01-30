@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Practica1_Styles.uss?fileID=7433441132597879392&amp;guid=3bddd81611fd04a4aaac8642cfad63be&amp;type=3#Practica1_Styles" />
+    <ui:VisualElement focusable="false" name="Main" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="WindowRight" class="window" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Weno" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Titulo" class="title" />
+            <ui:VisualElement name="ListaOpciones" class="list" style="flex-grow: 1;">
+                <ui:VisualElement name="ListItem" class="list_item" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Item1" class="item_text" />
+                    <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ListItem" class="list_item" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Item2" class="item_text" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ListItem" class="list_item" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Item3" class="item_text" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ListItem" class="list_item" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Item4" class="item_text" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="WindowLeft" class="window" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>
