@@ -5,39 +5,128 @@
     padding-left: 4%;
     flex-basis: auto;
     margin-top: 0;
-    max-width: 50%;
+    max-width: 100%;
+    width: auto;
+    min-width: 50%;
 }
 
 .title {
-    -unity-font-style: bold;
-    font-size: 32px;
+    -unity-font-style: normal;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    -unity-font: url("project://database/Assets/Jersey_15/Jersey15-Regular.ttf?fileID=12800000&guid=4200b206d7765ae40b586b8cb1c1bd79&type=3#Jersey15-Regular");
+    -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
 }
 
 .list {
 }
 
 .list_item {
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-left-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    border-top-color: rgb(0, 0, 0);
-    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-left-color: rgb(0, 218, 154);
+    border-right-color: rgb(0, 218, 154);
+    border-top-color: rgb(0, 218, 154);
+    border-bottom-color: rgb(0, 218, 154);
     flex-grow: 0;
     flex-basis: auto;
     max-height: 22%;
-    padding-top: 0;
+    padding-top: 5px;
     margin-top: 0;
     margin-bottom: 2%;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    background-color: rgba(196, 237, 255, 0.42);
+    display: flex;
+    visibility: visible;
+    overflow: visible;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    align-self: stretch;
 }
 
 .item_text {
+    font-size: 24px;
+    -unity-font: initial;
+    -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
+    color: rgb(255, 255, 255);
 }
 
 .item_button {
+    background-color: rgba(25, 28, 47, 0.63);
+    color: rgb(255, 255, 255);
+    width: 30%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    align-self: center;
+    justify-content: flex-start;
+}
+
+Button {
+    -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
+    font-size: 20px;
+}
+
+.unity-progress-bar {
+    background-color: rgb(25, 28, 47);
+}
+
+.stat {
+    flex-direction: row;
+    height: auto;
+    min-width: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    min-height: auto;
+    max-height: 12%;
+    width: 84%;
+    flex-wrap: nowrap;
+}
+
+.stat_button {
+    flex-direction: row;
+    align-items: auto;
+    background-color: rgba(25, 28, 47, 0.63);
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
+    color: rgb(255, 255, 255);
+    align-self: auto;
+}
+
+.left {
+}
+
+.right {
+}
+
+.stat_button.left {
+    align-self: center;
+}
+
+.stat_button.right {
+    align-self: center;
+}
+
+.stat_text {
+    -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    width: auto;
+    min-width: auto;
+    max-width: 65%;
 }
