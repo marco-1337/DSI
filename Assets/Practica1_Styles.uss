@@ -12,7 +12,7 @@
 
 .title {
     -unity-font-style: normal;
-    font-size: 40px;
+    font-size: 80px;
     color: rgb(255, 255, 255);
     -unity-font: url("project://database/Assets/Jersey_15/Jersey15-Regular.ttf?fileID=12800000&guid=4200b206d7765ae40b586b8cb1c1bd79&type=3#Jersey15-Regular");
     -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
@@ -54,10 +54,11 @@
 }
 
 .item_text {
-    font-size: 24px;
+    font-size: 58px;
     -unity-font: initial;
     -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
     color: rgb(255, 255, 255);
+    margin-left: 3%;
 }
 
 .item_button {
@@ -70,15 +71,18 @@
     border-bottom-left-radius: 10px;
     align-self: center;
     justify-content: flex-start;
+    font-size: 58px;
+    margin-right: 5%;
 }
 
 Button {
     -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
-    font-size: 20px;
+    font-size: 58px;
 }
 
 .unity-progress-bar {
     background-color: rgb(25, 28, 47);
+    font-size: 30px;
 }
 
 .stat {
@@ -90,18 +94,19 @@ Button {
     margin-bottom: 2%;
     min-height: auto;
     max-height: 12%;
-    width: 84%;
+    width: 90%;
     flex-wrap: nowrap;
+    margin-top: 2%;
 }
 
 .stat_button {
     flex-direction: row;
     align-items: auto;
     background-color: rgba(25, 28, 47, 0.63);
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
-    border-bottom-right-radius: 25%;
-    border-bottom-left-radius: 25%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
     -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
     color: rgb(255, 255, 255);
     align-self: auto;
@@ -123,7 +128,7 @@ Button {
 
 .stat_text {
     -unity-font-definition: url("project://database/Assets/Jersey_15/Jersey15-Regular%20SDF.asset?fileID=11400000&guid=8d47202f69d23e5428629ef16bd93bdc&type=2#Jersey15-Regular SDF");
-    font-size: 24px;
+    font-size: 58px;
     color: rgb(255, 255, 255);
     -unity-text-align: middle-center;
     width: auto;
