@@ -1,0 +1,24 @@
+.azul {
+    background-color: rgb(92, 112, 215);
+}
+
+.rojo {
+    background-color: rgb(209, 72, 84);
+}
+
+.verde {
+    background-color: rgb(113, 203, 82);
+}
+
+.amarillo {
+    background-color: rgb(234, 197, 84);
+}
+
+.margin {
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    max-height: none;
+    max-width: 31%;
+}

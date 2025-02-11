@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Practicas/P2/Practica2_Styles.uss?fileID=7433441132597879392&amp;guid=2daf18108974c1e4ab1ef4f17007f5b8&amp;type=3#Practica2_Styles" />
+    <ui:VisualElement style="flex-grow: 1; align-items: stretch; justify-content: space-between; background-color: rgb(255, 255, 255);">
+        <ui:VisualElement name="top" style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+            <ui:VisualElement name="itemTop1" class="azul margin" style="flex-grow: 1;" />
+            <ui:VisualElement name="itemTop2" class="rojo margin" style="flex-grow: 1;">
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+            <ui:VisualElement name="itemTop3" class="verde margin" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="mid" style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+            <ui:VisualElement name="itemMid1" class="verde margin" style="flex-grow: 1;">
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+            <ui:VisualElement name="itemMid2" class="azul margin" style="flex-grow: 1;" />
+            <ui:VisualElement name="itemMid3" class="rojo margin" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="bottom" style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+            <ui:VisualElement name="itemBottom1" class="rojo margin" style="flex-grow: 1;" />
+            <ui:VisualElement name="itemBottom2" class="verde margin" style="flex-grow: 1;" />
+            <ui:VisualElement name="itemBottom3" class="azul margin" style="flex-grow: 1;">
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
