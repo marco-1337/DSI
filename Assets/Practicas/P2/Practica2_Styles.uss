@@ -14,6 +14,10 @@
     background-color: rgb(234, 197, 84);
 }
 
+.blanco {
+    background-color: rgb(255, 255, 255);
+}
+
 .margin {
     margin-top: 1%;
     margin-right: 1%;
@@ -21,4 +25,21 @@
     margin-left: 1%;
     max-height: none;
     max-width: 31%;
+}
+
+.tab {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenido-dia {
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+}
+
+.lila {
+    background-color: rgb(180, 125, 222);
 }
