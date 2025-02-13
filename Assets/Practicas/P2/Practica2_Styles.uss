@@ -1,21 +1,25 @@
 .azul {
-    background-color: rgb(92, 112, 215);
+    background-color: rgb(136, 152, 231);
 }
 
 .rojo {
-    background-color: rgb(209, 72, 84);
+    background-color: rgb(233, 105, 116);
 }
 
 .verde {
-    background-color: rgb(113, 203, 82);
+    background-color: rgb(167, 207, 126);
 }
 
 .amarillo {
-    background-color: rgb(234, 197, 84);
+    background-color: rgb(238, 206, 107);
 }
 
 .blanco {
     background-color: rgb(255, 255, 255);
+}
+
+.lila {
+    background-color: rgb(167, 140, 202);
 }
 
 .margin {
@@ -31,6 +35,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 2%;
 }
 
 .contenido-dia {
@@ -40,6 +45,53 @@
     padding-left: 4%;
 }
 
-.lila {
-    background-color: rgb(180, 125, 222);
+.unity-label {
+    font-size: 50px;
+    -unity-font-definition: url("project://database/Assets/Fonts/PatrickHand/PatrickHand-Regular%20SDF.asset?fileID=11400000&guid=28c6b83e728f72e4388cee3deb359b15&type=2#PatrickHand-Regular SDF");
+}
+
+.fondo {
+    border-radius: 20px;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+.azul .fondo {
+    background-color: rgb(171, 182, 243);
+}
+
+.amarillo .fondo {
+    background-color: rgb(243, 225, 168);
+}
+
+.rojo .fondo {
+    background-color: rgb(241, 162, 169);
+}
+
+.verde .fondo {
+    background-color: rgb(197, 219, 175);
+}
+
+.lila .fondo {
+    background-color: rgb(200, 180, 226);
+}
+
+.unity-toggle {
+    width: 48px;
+    height: 48px;
+    margin: 1% 2% 0 2%;
+}
+
+.unity-toggle #unity-checkmark {
+    width: 100%;
+    height: 100%;
+}
+
+.checklist-item {
+    flex-direction: row;
+    align-items: center;
+    max-height: 12%;
+    margin-bottom: 1%;
 }

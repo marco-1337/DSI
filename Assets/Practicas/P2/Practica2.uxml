@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Practicas/P2/Practica2_Styles.uss?fileID=7433441132597879392&amp;guid=2daf18108974c1e4ab1ef4f17007f5b8&amp;type=3#Practica2_Styles" />
     <ui:VisualElement style="flex-grow: 1; align-items: stretch; justify-content: space-between; background-color: rgb(255, 255, 255);">
-        <ui:VisualElement name="Titulo" style="flex-grow: 1; max-height: 10%;">
-            <ui:Label tabindex="-1" text="Agenda" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        <ui:VisualElement name="Titulo" style="flex-grow: 1; max-height: 10%; flex-direction: row; justify-content: center; align-items: center;">
+            <ui:Label tabindex="-1" text="Planificación semanal&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="justify-content: center; flex-direction: column; align-items: auto; align-self: auto; font-size: 60px;" />
         </ui:VisualElement>
         <ui:VisualElement name="Menu" style="flex-grow: 1;">
             <ui:VisualElement name="Tabs" style="flex-grow: 1; flex-direction: row; max-height: 10%; justify-content: center;">
@@ -18,33 +18,45 @@
                 <ui:VisualElement name="Jueves" class="verde tab" style="flex-grow: 1;">
                     <ui:Label tabindex="-1" text="Jueves" parse-escape-sequences="true" display-tooltip-when-elided="true" />
                 </ui:VisualElement>
-                <ui:VisualElement name="Viernes" class="lila tab" style="flex-grow: 1;">
+                <ui:VisualElement name="Viernes" class="lila tab" style="flex-grow: 1; display: flex;">
                     <ui:Label tabindex="-1" text="Viernes" parse-escape-sequences="true" display-tooltip-when-elided="true" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Contenido" style="flex-grow: 1;">
-                <ui:VisualElement name="Lunes" class="azul contenido-dia" style="flex-grow: 1;">
-                    <ui:VisualElement style="flex-grow: 1;">
-                        <ui:Label tabindex="-1" text="Lunes" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <ui:VisualElement name="Lunes" class="azul contenido-dia" style="flex-grow: 1; display: flex;">
+                    <ui:VisualElement class="fondo" style="flex-grow: 1;">
+                        <ui:Label tabindex="-1" text="Deberes" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:VisualElement class="checklist-item" style="flex-grow: 1;">
+                            <ui:Toggle />
+                            <ui:Label tabindex="-1" text="Resolver ejercicios Matemáticas" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="checklist-item" style="flex-grow: 1;">
+                            <ui:Toggle />
+                            <ui:Label tabindex="-1" text="Practicar presentación célula eucariota" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="checklist-item" style="flex-grow: 1;">
+                            <ui:Toggle />
+                            <ui:Label tabindex="-1" text="Comprar libro lectura Inglés" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="Martes" class="amarillo contenido-dia" style="flex-grow: 1; display: none;">
-                    <ui:VisualElement style="flex-grow: 1;">
+                    <ui:VisualElement class="fondo" style="flex-grow: 1;">
                         <ui:Label tabindex="-1" text="Martes" parse-escape-sequences="true" display-tooltip-when-elided="true" />
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="Miercoles" class="rojo contenido-dia" style="flex-grow: 1; display: none;">
-                    <ui:VisualElement style="flex-grow: 1;">
+                    <ui:VisualElement class="fondo" style="flex-grow: 1;">
                         <ui:Label tabindex="-1" text="Miércoles" parse-escape-sequences="true" display-tooltip-when-elided="true" />
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="Jueves" class="verde contenido-dia" style="flex-grow: 1; display: none;">
-                    <ui:VisualElement style="flex-grow: 1;">
+                    <ui:VisualElement class="fondo" style="flex-grow: 1;">
                         <ui:Label tabindex="-1" text="Jueves" parse-escape-sequences="true" display-tooltip-when-elided="true" />
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="Viernes" class="lila contenido-dia" style="flex-grow: 1; display: none;">
-                    <ui:VisualElement style="flex-grow: 1;">
+                    <ui:VisualElement class="fondo" style="flex-grow: 1;">
                         <ui:Label tabindex="-1" text="Viernes" parse-escape-sequences="true" display-tooltip-when-elided="true" />
                     </ui:VisualElement>
                 </ui:VisualElement>
