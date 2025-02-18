@@ -78,24 +78,5 @@ public class Practica2 : MonoBehaviour
             OcultarContenido();
             contenido_V.style.display = DisplayStyle.Flex;
         });
-
-        Label enrichedText = contenido_V.Q<Label>("TextoEnriquecido");
-        enrichedText.text = @"<gradient=""left-side"">Vamos</gradient> Irlanda!!!";
-
-        //UQueryBuilder<VisualElement> builder = new(rootve);
-        //List<VisualElement> listve = builder.ToList();
-
-        //List<VisualElement> listve = rootve.Query(className: "azul").ToList();
-
-        //VisualElement midContainer = builder.Name("mid");
-        //List<VisualElement> listve = midContainer.Children().ToList();
-
-        //listve.ForEach(element =>
-        //    {   Debug.Log(element.name);
-        //        element.AddToClassList("amarillo");
-        //    });
-
-        //VisualElement button = rootve.Query<Button>().Last();
-        //button.AddToClassList("amarillo");
     }
 }
