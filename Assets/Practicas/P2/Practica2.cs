@@ -79,6 +79,9 @@ public class Practica2 : MonoBehaviour
             contenido_V.style.display = DisplayStyle.Flex;
         });
 
+        Label enrichedText = contenido_V.Q<Label>("TextoEnriquecido");
+        enrichedText.text = @"<gradient=""left-side"">Vamos</gradient> Irlanda!!!";
+
         //UQueryBuilder<VisualElement> builder = new(rootve);
         //List<VisualElement> listve = builder.ToList();
 

@@ -42,12 +42,38 @@
                 </ui:VisualElement>
                 <ui:VisualElement name="Martes" class="amarillo contenido-dia" style="flex-grow: 1; display: none;">
                     <ui:VisualElement class="fondo" style="flex-grow: 1;">
-                        <ui:Label tabindex="-1" text="Martes" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:Label tabindex="-1" text="17:45 - Llevar a la gata al veterinario" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row; overflow: visible; margin-top: 5%; margin-right: 5%; margin-left: 5%;">
+                            <ui:VisualElement class="picture" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Textures/cat2.png?fileID=2800000&amp;guid=36feda8363f4706459d633f00337233b&amp;type=3#cat2&quot;); rotate: -10deg;" />
+                            <ui:VisualElement class="picture" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Textures/cat1.png?fileID=2800000&amp;guid=fde0fa972b945744a97cbb74d10acc87&amp;type=3#cat1&quot;);" />
+                            <ui:VisualElement class="picture" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Textures/cat3.png?fileID=2800000&amp;guid=52e44cc6d883b6e48b0df22836c0e003&amp;type=3#cat3&quot;); rotate: 15deg;" />
+                        </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="Miercoles" class="rojo contenido-dia" style="flex-grow: 1; display: none;">
                     <ui:VisualElement class="fondo" style="flex-grow: 1;">
-                        <ui:Label tabindex="-1" text="Miércoles" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:Label tabindex="-1" text="Nivel de humedad" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:VisualElement class="progress-item" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Salón" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                            <ui:ProgressBar value="22" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="progress-item" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Cocina" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                            <ui:ProgressBar value="52" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="progress-item" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Baño" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                            <ui:ProgressBar value="74.4" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="progress-item" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Terraza" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                            <ui:ProgressBar value="62.4" />
+                        </ui:VisualElement>
+                        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:VisualElement class="checklist-item" style="flex-grow: 1;">
+                            <ui:Toggle />
+                            <ui:Label tabindex="-1" text="Regar las plantas del salón!!" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="Jueves" class="verde contenido-dia" style="flex-grow: 1; display: none;">
@@ -77,14 +103,18 @@
                 </ui:VisualElement>
                 <ui:VisualElement name="Viernes" class="lila contenido-dia" style="flex-grow: 1; display: flex;">
                     <ui:VisualElement class="fondo" style="flex-grow: 1;">
-                        <ui:Label tabindex="-1" text="19:30 partido del 6 Nations: Gales-Irlanda! A las 19h en el bar de siempre, con los colegas" parse-escape-sequences="true" display-tooltip-when-elided="true" />
-                        <ui:Label tabindex="-1" text="Vamos Irlanda!!!" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:VisualElement class="checklist-item" style="flex-grow: 1;">
+                            <ui:Toggle />
+                            <ui:Label tabindex="-1" text="Tirar la basura" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                        <ui:Label tabindex="-1" text="19:30 - Partido del 6 Nations: Gales-Irlanda! &#10;&#x9; A las 19h en el bar de siempre, con los colegas" parse-escape-sequences="true" display-tooltip-when-elided="true" style="flex-wrap: nowrap; white-space: normal;" />
+                        <ui:Label tabindex="-1" text="Vamos Irlanda!!!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TextoEnriquecido" style="-unity-font-style: bold;" />
                         <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" />
                         <ui:Label tabindex="-1" text="Mi semana ha sido:" parse-escape-sequences="true" display-tooltip-when-elided="true" />
                         <ui:VisualElement style="flex-grow: 0.3; flex-direction: row; align-items: center;">
-                            <ui:Label tabindex="-1" text=":(" parse-escape-sequences="true" display-tooltip-when-elided="true" />
-                            <ui:Slider high-value="100" name="Viernes" style="width: 50%; height: 100%; flex-direction: column; align-items: center; justify-content: center;" />
-                            <ui:Label tabindex="-1" text=":)" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" style="background-image: url(&quot;project://database/Assets/Textures/free-sad-face-icon-2691-thumb.png?fileID=2800000&amp;guid=62d24c706b71de048b45e6a6ff6c8b2c&amp;type=3#free-sad-face-icon-2691-thumb&quot;); -unity-background-scale-mode: scale-to-fit; min-width: 5%; margin-top: 20px;" />
+                            <ui:Slider high-value="100" name="Viernes" style="width: 50%; height: 100%; flex-direction: column; align-items: center; justify-content: center; padding-bottom: 5%;" />
+                            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="background-image: url(&quot;project://database/Assets/Textures/4989500.png?fileID=2800000&amp;guid=697d868d9edcbfe4597dc3dc557c6005&amp;type=3#4989500&quot;); min-width: 5%; margin-top: 20px; -unity-background-scale-mode: scale-to-fit;" />
                         </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:VisualElement>

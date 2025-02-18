@@ -113,12 +113,14 @@
 
 .unity-base-slider__dragger {
     background-color: rgb(255, 255, 255);
-    height: 75%;
+    height: 60%;
     width: 10%;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
+    min-height: 24px;
+    min-width: 24px;
 }
 
 .unity-base-slider__tracker {
@@ -138,4 +140,72 @@
     border-right-color: rgb(167, 140, 202);
     border-top-color: rgb(167, 140, 202);
     border-bottom-color: rgb(167, 140, 202);
+}
+
+.picture {
+    -unity-background-scale-mode: scale-and-crop;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-width: 15px;
+    border-right-width: 15px;
+    border-bottom-width: 15px;
+    border-left-width: 15px;
+    border-left-color: rgb(167, 140, 202);
+    border-right-color: rgb(167, 140, 202);
+    border-top-color: rgb(167, 140, 202);
+    border-bottom-color: rgb(167, 140, 202);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-property: scale;
+}
+
+.picture:hover {
+    scale: 1.1 1.1;
+}
+
+.progress-item {
+    flex-direction: row;
+    min-height: 24px;
+    height: 10%;
+    align-items: center;
+    max-height: 15%;
+}
+
+.unity-progress-bar {
+    width: 30%;
+    margin-left: 5%;
+}
+
+.unity-progress-bar__container {
+    height: auto;
+    min-height: 50px;
+}
+
+.unity-progress-bar__background {
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
+}
+
+.unity-progress-bar__progress {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(238, 206, 107);
+}
+
+.progress-item > Label {
+    min-width: 20%;
+    flex-direction: column;
+    -unity-text-align: upper-right;
 }
