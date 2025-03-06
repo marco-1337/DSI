@@ -1,0 +1,43 @@
+#Profile {
+    background-color: rgb(69, 128, 126);
+    min-width: 40%;
+    max-width: 40%;
+    height: 100%;
+}
+
+.stat {
+    max-height: 25%;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-left-color: rgb(70, 69, 113);
+    border-right-color: rgb(70, 69, 113);
+    border-top-color: rgb(70, 69, 113);
+    border-bottom-color: rgb(70, 69, 113);
+}
+
+.stat-title {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.stat-level {
+    min-height: 50%;
+}
+
+.item {
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgb(69, 128, 126);
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.stat-title > Label {
+    font-size: 56px;
+    -unity-text-align: middle-left;
+}
