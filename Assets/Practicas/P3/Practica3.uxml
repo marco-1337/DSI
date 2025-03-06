@@ -3,42 +3,42 @@
     <ui:VisualElement style="flex-grow: 1;">
         <ui:VisualElement name="ZonaSuperior" style="flex-grow: 1; flex-direction: row; height: 60%;">
             <ui:VisualElement name="Izq" class="gridParent" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap; background-color: rgb(0, 124, 17);">
-                <ui:VisualElement class="gridColumn" style="flex-grow: 1;">
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1; -unity-text-outline-color: rgb(0, 0, 0);" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
+                <ui:VisualElement name="Col1" class="gridColumn" style="flex-grow: 1;">
+                    <ui:VisualElement name="Elem1" class="gridButton" style="flex-grow: 1; -unity-text-outline-color: rgb(0, 0, 0);" />
+                    <ui:VisualElement name="Elem4" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem7" class="gridButton" style="flex-grow: 1;" />
                 </ui:VisualElement>
-                <ui:VisualElement class="gridColumn" style="flex-grow: 1;">
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
+                <ui:VisualElement name="Col2" class="gridColumn" style="flex-grow: 1;">
+                    <ui:VisualElement name="Elem2" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem5" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem8" class="gridButton" style="flex-grow: 1;" />
                 </ui:VisualElement>
-                <ui:VisualElement class="gridColumn" style="flex-grow: 1;">
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
+                <ui:VisualElement name="Col3" class="gridColumn" style="flex-grow: 1;">
+                    <ui:VisualElement name="Elem3" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem6" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem9" class="gridButton" style="flex-grow: 1;" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Der" class="gridParent" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap; background-color: rgb(5, 0, 228);">
-                <ui:VisualElement class="gridColumn" style="flex-grow: 1;">
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1; -unity-text-outline-color: rgb(0, 0, 0);" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
+                <ui:VisualElement name="Col1" class="gridColumn" style="flex-grow: 1;">
+                    <ui:VisualElement name="Elem1" class="gridButton" style="flex-grow: 1; -unity-text-outline-color: rgb(0, 0, 0);" />
+                    <ui:VisualElement name="Elem4" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem7" class="gridButton" style="flex-grow: 1;" />
                 </ui:VisualElement>
-                <ui:VisualElement class="gridColumn" style="flex-grow: 1;">
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
+                <ui:VisualElement name="Col2" class="gridColumn" style="flex-grow: 1;">
+                    <ui:VisualElement name="Elem2" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem5" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem8" class="gridButton" style="flex-grow: 1;" />
                 </ui:VisualElement>
-                <ui:VisualElement class="gridColumn" style="flex-grow: 1;">
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
-                    <ui:VisualElement class="gridButton" style="flex-grow: 1;" />
+                <ui:VisualElement name="Col3" class="gridColumn" style="flex-grow: 1;">
+                    <ui:VisualElement name="Elem3" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem6" class="gridButton" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Elem9" class="gridButton" style="flex-grow: 1;" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="ZonaInferior" class="bottomBg" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; height: 40%;">
-            <ui:VisualElement name="Imagen" style="flex-grow: 1; cursor: initial; background-image: url(&quot;project://database/Assets/Practicas/P3/resize_image.png?fileID=2800000&amp;guid=e0f6657cb164c924189e83ac2a3afcb6&amp;type=3#resize_image&quot;); height: 226px; width: 562px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; align-self: auto; -unity-background-scale-mode: scale-and-crop; -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; -unity-text-align: middle-center;" />
+            <ui:VisualElement name="Imagen" class="image" style="flex-grow: 1; cursor: initial; background-image: url(&quot;project://database/Assets/Practicas/P3/resize_image.png?fileID=2800000&amp;guid=e0f6657cb164c924189e83ac2a3afcb6&amp;type=3#resize_image&quot;); height: 226px; width: 562px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; align-self: auto; -unity-background-scale-mode: scale-and-crop; -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; -unity-text-align: middle-center;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
