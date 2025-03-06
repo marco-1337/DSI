@@ -14,9 +14,6 @@ public class Practica3 : MonoBehaviour
         VisualElement izq = root.Q("Izq");
         VisualElement der = root.Q("Der");
 
-        izq.AddManipulator(new Practica3Manipulator());
-        der.AddManipulator(new Practica3Manipulator());
-
         List<VisualElement> columnasIzq = izq.Children().ToList();
         List<VisualElement> columnasDer = der.Children().ToList();
 
