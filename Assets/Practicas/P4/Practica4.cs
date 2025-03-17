@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 public class Practica4 : VisualElement
 {
 
-    // Query all stat tmplates
+    // Query all stat templates
 
     public new class UxmlFactory : UxmlFactory<Practica4, UxmlTraits> { }
 

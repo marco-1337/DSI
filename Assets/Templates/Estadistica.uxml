@@ -1,4 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="Stat" src="project://database/Assets/Templates/Stat.uxml?fileID=9197481963319205126&amp;guid=aea2c962525e4a04ca6ca97910c13fe1&amp;type=3#Stat" />
-    <ui:Instance template="Stat" name="Stat" />
-</ui:UXML>

@@ -40,6 +40,10 @@
     background-image: url("project://database/Assets/Textures/4989500.png?fileID=2800000&guid=697d868d9edcbfe4597dc3dc557c6005&type=3#4989500");
 }
 
+.item-inactive {
+    /* display: none; */
+}
+
 .stat-title > Label {
     font-size: 56px;
     -unity-text-align: middle-left;
