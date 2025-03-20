@@ -152,6 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9d54f34551ee248b2fc7bb3c02379e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _leftHightlight: {r: 0, g: 1, b: 0.08573532, a: 1}
+  _rightHighlight: {r: 0, g: 0.6687751, b: 1, a: 1}
+  _resizeFactor: 0.01
+  _resizeMin: 0.5
+  _resizeMax: 2
 --- !u!114 &1047656267
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="ZonaInferior" class="bottomBg" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; height: 40%;">
-            <ui:VisualElement name="Imagen" class="image" style="flex-grow: 1; cursor: initial; background-image: url(&quot;project://database/Assets/Practicas/P3/resize_image.png?fileID=2800000&amp;guid=e0f6657cb164c924189e83ac2a3afcb6&amp;type=3#resize_image&quot;); height: 226px; width: 562px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; align-self: auto; -unity-background-scale-mode: scale-and-crop; -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; -unity-text-align: middle-center;" />
+            <ui:VisualElement name="ImageResize" class="image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Practicas/P3/resize_image.png?fileID=2800000&amp;guid=e0f6657cb164c924189e83ac2a3afcb6&amp;type=3#resize_image&quot;); width: 30%; height: -22px; border-top-width: 10px; border-right-width: 10px; border-bottom-width: 10px; border-left-width: 10px; transform-origin: center;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

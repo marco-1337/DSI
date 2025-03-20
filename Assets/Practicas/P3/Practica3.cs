@@ -7,6 +7,15 @@ using UnityEngine.UIElements;
 
 public class Practica3 : MonoBehaviour
 {
+
+    [SerializeField]
+    private Color _leftHightlight = Color.white, _rightHighlight = Color.white;
+
+    private StyleColor _leftBaseColor, _rightBaseColor;
+
+    [SerializeField]
+    private float _resizeFactor = 0.01f, _resizeMin = 0.5f, _resizeMax = 2f;
+
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
@@ -29,7 +38,16 @@ public class Practica3 : MonoBehaviour
             elemsDer.AddRange(e.Children().ToList());
         }
 
-        elemsIzq.ForEach( elem => elem.AddManipulator(new Practica3Manipulator()));
-        elemsDer.ForEach( elem => elem.AddManipulator(new Practica3Manipulator()));
-    }   
+        _leftBaseColor = elemsIzq[0].style.backgroundColor;
+        _rightBaseColor = elemsDer[0].style.backgroundColor;
+
+        elemsIzq.ForEach( elem => elem.AddManipulator(new Practica3GridHoverManipulator()));
+        elemsIzq.ForEach( elem => elem.AddManipulator(new Practica3GridClickManipulator(_leftBaseColor, _leftHightlight)));
+
+        elemsDer.ForEach( elem => elem.AddManipulator(new Practica3GridHoverManipulator()));
+        elemsDer.ForEach( elem => elem.AddManipulator(new Practica3GridClickManipulator(_rightBaseColor, _rightHighlight)));
+
+        VisualElement imgRes = root.Q("ImageResize");
+        imgRes.AddManipulator(new Practica3ResizerManipulator(_resizeFactor, _resizeMin, _resizeMax));
+    }
 }
