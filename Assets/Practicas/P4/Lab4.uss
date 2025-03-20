@@ -16,6 +16,7 @@
     margin-bottom: 15px;
     margin-left: 15px;
     transition-duration: 0.25s;
+    height: 18%;
 }
 
 .stat-title {
@@ -26,6 +27,7 @@
 
 .stat-level {
     min-height: 50%;
+    flex-direction: row;
 }
 
 .item {
@@ -38,22 +40,44 @@
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     background-image: url("project://database/Assets/Textures/4989500.png?fileID=2800000&guid=697d868d9edcbfe4597dc3dc557c6005&type=3#4989500");
+    height: 100%;
+    max-width: none;
+    width: 18%;
 }
 
 .item-inactive {
-    /* display: none; */
+    opacity: 0.2;
 }
 
 .stat-title > Label {
     font-size: 56px;
     -unity-text-align: middle-left;
-    -unity-font-definition: url("project://database/Assets/Fonts/Lilita_One/LilitaOne-Regular%20SDF.asset?fileID=11400000&guid=f214be41f52133b4e9876e307a9234f4&type=2#LilitaOne-Regular SDF");
+    -unity-font-definition: url("project://database/Assets/Fonts/Skranji/Skranji-Regular%20SDF.asset?fileID=11400000&guid=4320b4fd50dcd224fb93fb4e9b365f19&type=2#Skranji-Regular SDF");
+    transition-duration: 0.2s;
 }
 
-.stat:hover {
-    background-color: rgb(69, 128, 126);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+.item-attack {
+    background-image: url("project://database/Assets/Textures/dagger.png?fileID=2800000&guid=5fff59f50600e5449a7c45dc8a3a1a51&type=3#dagger");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.item-defense {
+    background-image: url("project://database/Assets/Textures/shield.png?fileID=2800000&guid=c8b88184e7b0e744d8a93ca9d0d5f7d9&type=3#shield");
+}
+
+.item-stamina {
+    background-image: url("project://database/Assets/Textures/energy.png?fileID=2800000&guid=5c3a8388348e17343b36ed39bf17c863&type=3#energy");
+}
+
+.stat-title > Label:hover {
+    scale: 1.1 1.1;
+}
+
+.spacer {
+    height: 5%;
+    max-height: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url("project://database/Assets/Textures/spacer.png?fileID=2800000&guid=6bd914fbd4de590468778691005132ea&type=3#spacer");
+    -unity-background-scale-mode: scale-to-fit;
 }

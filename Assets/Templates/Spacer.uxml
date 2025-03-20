@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Spacer" style="flex-grow: 1; max-height: 100%; background-image: url(&quot;project://database/Assets/Textures/spacer.png?fileID=2800000&amp;guid=6bd914fbd4de590468778691005132ea&amp;type=3#spacer&quot;); -unity-background-scale-mode: scale-to-fit; margin-top: 30px; margin-bottom: 20px;" />
+</ui:UXML>

@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEditor.Progress;
 
 public class StatControl : VisualElement
 {
 
-    private string _statName = "";
+    private string _statName;
     public string statName {
         get { return _statName; }
         set { 
@@ -15,7 +16,7 @@ public class StatControl : VisualElement
         }
     }
 
-    private string _itemPic = "";
+    private string _itemPic;
     public string itemPic
     {
         get { return _itemPic; }
@@ -25,58 +26,59 @@ public class StatControl : VisualElement
         }
     }
 
-    private int _value;
-    public int value
+    private int _statLevel;
+    public int statLevel
     {
-        get { return _value; }
+        get { return _statLevel; }
         set { 
-            _value = value;
+            _statLevel = value;
             changeValue();    
         }
     }
+
+    #region VE
+    VisualElement title = new VisualElement();
+    Label label = new Label();
+
+    VisualElement statValue = new VisualElement();
+    List<VisualElement> items = new List<VisualElement>();
+    #endregion
 
     public StatControl()
     {
         AddToClassList("stat");
 
-        var title = new VisualElement();
         title.AddToClassList("stat-title");
-
-        //var label = new Label(_statName);
-        //title.Add(label);
+        title.Add(label);
+        changeStatName();
 
         hierarchy.Add(title);
 
+        statValue.AddToClassList("stat-level");
+        for(int i = 0; i < 5; i++)
+        {
+            VisualElement item = new VisualElement();
+            item.AddToClassList("item");
+            if (_itemPic != "")
+            {
+                item.AddToClassList($"item-{_itemPic}");
+            }
+            items.Add(item);
+            statValue.Add(item);
+        }
+        changeItemPic();
 
-        var value = new VisualElement();
-        value.AddToClassList("stat-level");
-        var item = new VisualElement();
-        item.AddToClassList($"item");
-        //if(_itemPic != "")
-        //    item.AddToClassList($"item-{_itemPic}");
-
-        //for (int i = 0; i < 5; i++)
-        //    value.Add(item);
-        value.Add(item);
-        value.Add(item);
-        value.Add(item);
-        value.Add(item);
-        value.Add(item);
-
-        hierarchy.Add(value);
+        hierarchy.Add(statValue);
     }
 
     public void changeStatName()
     {
-        var title = this.Q<VisualElement>("stat-title");
-        var label = title.Q<Label>();
         label.text = _statName;
+        Debug.Log("Stat Name: " + _statName);
     }
 
     public void changeItemPic()
     {
-        var value = this.Q<VisualElement>("stat-level");
-        List<VisualElement> items = value.Query<VisualElement>("item").ToList();
         foreach (var item in items)
         {
             item.ClearClassList();
@@ -88,11 +90,9 @@ public class StatControl : VisualElement
 
     public void changeValue()
     {
-        var value = this.Q<VisualElement>("stat-level");
-        List<VisualElement> items = value.Query<VisualElement>("item").ToList();
         for (int i = 0; i < 5; i++)
         {
-            if (i < _value)
+            if (i < _statLevel)
                 items[i].RemoveFromClassList("item-inactive");
             else
                 items[i].AddToClassList("item-inactive");
@@ -111,9 +111,9 @@ public class StatControl : VisualElement
         public override void Init(VisualElement ve, IUxmlAttributes bag, CreationContext cc)
         {
             base.Init(ve, bag, cc);
-            ((StatControl)ve)._statName = myStatName.GetValueFromBag(bag, cc);
-            //((StatControl)ve).itemPic = myItemPic.GetValueFromBag(bag, cc);
-            //((StatControl)ve).value = myValue.GetValueFromBag(bag, cc);
+            ((StatControl)ve).statName = myStatName.GetValueFromBag(bag, cc);
+            ((StatControl)ve).itemPic = myItemPic.GetValueFromBag(bag, cc);
+            ((StatControl)ve).statLevel = myValue.GetValueFromBag(bag, cc);
         }
     }
 }
