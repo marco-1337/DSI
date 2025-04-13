@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using System;
 
-public class Individuo
+[Serializable]
+public class IndividuoP6
 {
     public event Action Cambio;
-
+    [SerializeField]
     private string nombre;
     public string Nombre 
     {
@@ -21,7 +22,7 @@ public class Individuo
             }
         }
     }
-
+    [SerializeField]
     private string apellido;
     public string Apellido 
     {
@@ -36,6 +37,7 @@ public class Individuo
         }
     }
 
+    [SerializeField]
     private Texture2D backgroundTexture;
     public Texture2D BackgroundTexture
     {
@@ -50,7 +52,7 @@ public class Individuo
         }
     }
 
-    public Individuo(string nombre, string apellido)
+    public IndividuoP6(string nombre, string apellido)
     {
         this.nombre = nombre;
         this.apellido = apellido;

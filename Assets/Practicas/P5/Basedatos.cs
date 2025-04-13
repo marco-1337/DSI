@@ -6,7 +6,7 @@ public class Basedatos
 {
     public static List<Individuo> getData() 
     {
-        List<Individuo> datos = new List<Individuo>();
+        List<Individuo> datos = new();
 
         Individuo first = new Individuo("A", "Pedra");
         Individuo second = new Individuo("Dwayne", "Johnson");

@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Practicas/P6/Practica6_Styles.uss?fileID=7433441132597879392&amp;guid=199a5f52d9e7ba74695d10245f029df0&amp;type=3#Practica6_Styles" />
+    <ui:VisualElement name="Card" picking-mode="Ignore" class="card" style="flex-grow: 1; width: 180px; height: 280px; justify-content: center;">
+        <ui:VisualElement name="CardImage" picking-mode="Ignore" class="cardImage" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Practicas/P5/Images/4.jpg?fileID=2800000&amp;guid=ede172137815e514ab6ad391138c45f1&amp;type=3#4&quot;);" />
+        <ui:VisualElement name="TextArea" picking-mode="Ignore" class="cardTextArea" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Nombre" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NameLabel" picking-mode="Ignore" class="textArea" style="height: 25px; font-size: 26px;" />
+            <ui:Label tabindex="-1" text="Apellido&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SurnameLabel" picking-mode="Ignore" class="textArea" style="font-size: 26px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

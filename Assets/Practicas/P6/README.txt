@@ -1,0 +1,1 @@
+Se ha incluido una escena para probar la práctica

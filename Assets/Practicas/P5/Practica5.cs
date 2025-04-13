@@ -75,8 +75,6 @@ public class Practica5 : MonoBehaviour
         if (selecIndividuo != null)
         {
             selecIndividuo.BackgroundTexture = imagen;    
-            Debug.Log(imagen.name);
-            Debug.Log("eNTRA");
         }
     }
 

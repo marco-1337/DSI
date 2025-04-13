@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Practicas/P6/Practica6_Styles.uss?fileID=7433441132597879392&amp;guid=199a5f52d9e7ba74695d10245f029df0&amp;type=3#Practica6_Styles" />
+    <ui:VisualElement name="root" style="flex-grow: 1;">
+        <ui:VisualElement name="Menu" style="flex-grow: 1; -unity-background-image-tint-color: rgb(155, 255, 214);">
+            <ui:VisualElement name="MenuImages" style="flex-grow: 1;">
+                <ui:VisualElement name="MenuImage1" class="imageSelector" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Practicas/P5/Images/1.jpg?fileID=2800000&amp;guid=afc069ca0b25f9d40ad4945cb46fa2a7&amp;type=3#1&quot;);" />
+                <ui:VisualElement name="MenuImage2" class="imageSelector" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Practicas/P5/Images/2.jpg?fileID=2800000&amp;guid=1635f6801fccefa43bfab0e9b2d206ff&amp;type=3#2&quot;);" />
+                <ui:VisualElement name="MenuImage3" class="imageSelector" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Practicas/P5/Images/3.jpg?fileID=2800000&amp;guid=c7d21c560f899e64887d5d32bdbe21a6&amp;type=3#3&quot;);" />
+                <ui:VisualElement name="MenuImage4" class="imageSelector" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Practicas/P5/Images/4.jpg?fileID=2800000&amp;guid=ede172137815e514ab6ad391138c45f1&amp;type=3#4&quot;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="MenuNameArea" class="menuArea" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Nombre" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MenuNameLabel" class="menuLabels" />
+                <ui:TextField picking-mode="Ignore" name="TextFieldNombre" class="textField" />
+                <ui:Label tabindex="-1" text="Apellido" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MenuSurnameLevel" class="menuLabels" />
+                <ui:TextField picking-mode="Ignore" name="TextFieldApellido" class="textField" />
+            </ui:VisualElement>
+            <ui:VisualElement name="MenuFooter" style="flex-grow: 1;">
+                <ui:Toggle label="Modificar" name="ToggleModificar" style="-unity-text-align: middle-left; font-size: 32px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Lilita_One/LilitaOne-Regular%20SDF.asset?fileID=11400000&amp;guid=f214be41f52133b4e9876e307a9234f4&amp;type=2#LilitaOne-Regular SDF&quot;);" />
+                <ui:Button text="Añadir Tarjeta" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonCrear" style="align-items: flex-start; font-size: 30px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Lilita_One/LilitaOne-Regular%20SDF.asset?fileID=11400000&amp;guid=f214be41f52133b4e9876e307a9234f4&amp;type=2#LilitaOne-Regular SDF&quot;); justify-content: space-around; align-self: center;" />
+                <ui:Button text="Guardar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BotonGuardar" style="align-items: flex-start; font-size: 30px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Lilita_One/LilitaOne-Regular%20SDF.asset?fileID=11400000&amp;guid=f214be41f52133b4e9876e307a9234f4&amp;type=2#LilitaOne-Regular SDF&quot;); justify-content: space-around; align-self: center;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="CardsSection" style="flex-grow: 1; flex-wrap: wrap; max-width: 40%;" />
+    </ui:VisualElement>
+</ui:UXML>
